@@ -26,6 +26,7 @@ Jargon:
   SaaS: Software as a Service
   PaaS: Platform as a Service
   IaaS: Infrastructure as a Service
+  AZ: Availability Zone
 
 The 4 core services of IaaS:
   1  Compute
@@ -85,6 +86,31 @@ The Benefits of Cloud:
     4. Increase speed and agility
     5. Stop spending money on running and maintaining data centers
     6. Go global in minutes
+
+Global Infrastructure:
+  Region:
+    Geographically distinct locations, consisting of one or more AZs.
+    Every region is physically isolated from and independent of every other region, in terms of location, power and water supply
+
+    Most regions have 3 AZs, US-EAST is the default region.
+    Cost and regulatory compliance of regions varies. 
+
+  Global Services:
+    Some AWS services operate across multiple regions and the region will be fixed to 'Global'.
+
+Availability Zone:
+  A physical location made up of one or more data-center.
+  A region typically but not always contains 3 AZs.
+  Data-centers within a region will be isolated, but close enough to provide 
+  (<10ms) latency.
+
+  Its common practice to run workloads in at least 3 AZs.
+
+  eg: us-east-1c, us-east-1b ,us-east-1a 
+
+  
+
+
 
 
 
